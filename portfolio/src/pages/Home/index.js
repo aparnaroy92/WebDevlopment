@@ -42,7 +42,7 @@ function Home() {
                     <Link className="nav-link" to='/'>Home</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" to='/Aboutme'>Aboutme</Link>
+                    <Link className="nav-link" to='/Aboutme'>About Me</Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" to='/Experience'>Experience</Link>
