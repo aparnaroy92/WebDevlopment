@@ -1,0 +1,13 @@
+.about-me{
+    text-align: center;
+  }
+  .bioImg {
+    height: 400px;
+    border-radius: 30px;  
+}  
+.name {
+    color: black;
+    font-size: 70px;
+    font-family: 'Amatic SC', cursive;
+    padding-left: 10px;
+  }

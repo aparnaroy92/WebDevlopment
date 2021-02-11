@@ -1,10 +1,11 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import ReactTypingEffect from "react-typing-effect";
+import "./index.css";
 
 
 /* Image imports*/
-import image from './../../assets/aparna.jpg';
+import image from '../../assets/aparna.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -23,14 +24,13 @@ const useStyles = makeStyles((theme) => ({
 function Aboutme() {
   return (
     <div className="App">
-        <div>
+        <div className="about-me">
           <ReactTypingEffect
             text="Aparna Roy"
             className="name"
             typingDelay="2000ms"
             style={{ letterSpacing: "0.181818em", color: "whitesmoke" }}
           />
-        <div className="About-me">
           <div className="aboutImgCont">
               <img
                 className="bioImg img-fluid"
@@ -43,7 +43,6 @@ function Aboutme() {
             </p>
           </div>
         </div>
-      </div>
   );
 }
 
