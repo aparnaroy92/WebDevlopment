@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# keys
+/src/portfolio-bee-92-firebase-adminsdk-pgdyr-4a8592976a.json
+
 # testing
 /coverage
 

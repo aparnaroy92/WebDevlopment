@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 /* Image imports*/
 import image from '../../assets/rentalbanc.png';
 
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
@@ -20,6 +21,7 @@ export function Cards() {
   const classes = useStyles();
 
   return (
+    
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia

@@ -7,6 +7,7 @@ import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
 import Cards from "./../../pages/Cards"; 
 
+
 function Experience() {
   return (
     <Timeline align="alternate">
@@ -39,21 +40,22 @@ function Experience() {
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
-          <TimelineDot variant="outlined" />
+          <TimelineDot variant="outlined" color="primary" />
+          <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent>Aug 2014 - Aug 2015
         <Cards />
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
-        <TimelineSeparator>
-          <TimelineDot variant="outlined" />
-        </TimelineSeparator>
-        <TimelineContent>Jan 2014 - May 2015
-        <Cards />
-        </TimelineContent>
-      </TimelineItem>
-    </Timeline>
+      <TimelineSeparator>
+        <TimelineDot variant="outlined" />
+      </TimelineSeparator>
+      <TimelineContent>Jan 2014 - May 2014
+        <Cards/>
+      </TimelineContent>
+    </TimelineItem>
+  </Timeline>
     
   );
 }

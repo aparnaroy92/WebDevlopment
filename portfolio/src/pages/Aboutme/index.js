@@ -7,7 +7,6 @@ import "./index.css";
 /* Image imports*/
 import image from '../../assets/aparna.jpg';
 
-
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
@@ -22,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function Aboutme() {
+
   return (
     <div className="App">
         <div className="about-me">
@@ -39,7 +39,6 @@ function Aboutme() {
               />
             </div>
             <p>
-              Hi there! My name is Aparna Roy, you can call me Eliz.
             </p>
           </div>
         </div>

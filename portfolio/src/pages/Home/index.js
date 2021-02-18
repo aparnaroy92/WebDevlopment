@@ -1,17 +1,13 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
-import ReactTypingEffect from "react-typing-effect";
-
 
 /* Image imports*/
-import img from './../../assets/icon.jpg'
-import image from './../../assets/aparna.jpg';
+import img from './../../assets/icon.jpg';
 
 import {
   Link,
 } from "react-router-dom";
-
 
 const useStyles = makeStyles((theme) => ({
   root: {
