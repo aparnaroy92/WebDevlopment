@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ReactTypingEffect from "react-typing-effect";
 import "./index.css";
@@ -6,6 +6,8 @@ import "./index.css";
 
 /* Image imports*/
 import image from '../../assets/aparna.jpg';
+//Firestore import
+import firebaseDB from '../../firestore';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,7 +22,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+
 function Aboutme() {
+  const [val, setDesc] = useState([]);
+  const firestore = firebaseDB.firestore();
+  const fetchDesc = () => {
+    const response = firestore.collection('aboutme').doc('bio');
+    return response.get().then(item => {
+      setDesc(item.data().desc);
+    });
+  }
+
+  useEffect(()=> {
+      fetchDesc();
+      console.log(val);
+  },[]);
 
   return (
     <div className="App">
@@ -39,6 +55,8 @@ function Aboutme() {
               />
             </div>
             <p>
+              Checking
+              {val}
             </p>
           </div>
         </div>
